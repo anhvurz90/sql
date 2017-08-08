@@ -20,3 +20,7 @@
 10.Weather Observation station 13:
   select truncate(sum(lat_n), 4) from station 
 	where lat_n > 38.788 and lat_n < 137.2345;
+11.Weather Observation station 14:
+  SELECT TRUNCATE(MAX(lat_n), 4) FROM station WHERE lat_n < 137.2345;
+12.Weather Observation station 15:
+  SELECT ROUND(long_w, 4) FROM station WHERE lat_n < 137.2345 ORDER BY lat_n DESC LIMIT 1;
